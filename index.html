@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <tittle>Weather APP</tittle>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-        
-            <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="weather_container">
+            <p class="temp">20</p>
 
-                <div class="weather_container">
-                    <div class="temp">
-                        <p>20</p>
-                    </div>
-
-                    <div class="time_location">
-                        <p>Delhi</p>
-                        <p>18:09 - Sunday 2025-08-10</p>
-                    </div>
-
-                    <div class="condition">
-                        <p></p>
-
-                    </div>
-                </div>
-
-                <nav>
-                    <form> 
-                            <input type='text' placeholder="Search for a location" class='search_area'/>
-                            <button type="submit">Search Button</button>
-                    </form>
-                </nav>
+            <div class="time_location">
+                <p class="location">Delhi</p>
+                <span class="date_time">18:09 - Sunday 2025-08-10</span>
             </div>
-        
-        
-    </body>
+
+            <div class="condition">
+                <p>Mist</p>
+            </div>
+        </div>
+
+        <nav>
+            <form> 
+                <input type="text" placeholder="Search for a location" class="search_area" />
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
 
     <script src="script.js"></script>
+</body>
 </html>
