@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Search Bar -->
+        <nav>
+            <form>
+                <input type="text" placeholder="Search for a location" class="search_area"/>
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+
+        <!-- Main Weather Info -->
+        <div class="weather_container">
+            <div class="temp">
+                <p>--</p>
+            </div>
+            <div class="condition">
+                <img id="weatherIcon" src="" alt="Weather Icon">
+                <p>Loading...</p>
+            </div>
+            <div class="time_location">
+                <p>--</p>
+                <span>--</span>
+            </div>
+        </div>
+
+        <!-- Extra Details -->
+        <div class="details">
+            <p>💧 Humidity: <span id="humidity">--</span>%</p>
+            <p>🌬 Wind: <span id="wind">--</span> km/h</p>
+            <p>🌅 Sunrise: <span id="sunrise">--</span></p>
+            <p>🌇 Sunset: <span id="sunset">--</span></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
