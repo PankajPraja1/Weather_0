@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { FaGithub, FaCode, FaInstagram, FaLinkedin } from "react-icons/fa";
 
+export const metadata = {
+  title: "About us"
+}
 
 const About = () => {
   return (
@@ -28,7 +31,8 @@ const About = () => {
         </p>
 
         <div className="flex lg:flex-row flex-col lg:justify-start justify-center lg:items-start items-center gap-4 mt-4 px-4 lg:px-10 xl:px-40">
-          <img src="/me.jpg" alt="Creator" className="md:w-70 w-50 h-fit shadow-lg rounded-xl" />
+          <img src="/me.jpg" alt="Creator" width={120} height={120} className="shadow-lg rounded-2xl" />
+
           <div className="flex flex-col justify-center items-center lg:items-start gap-1 px-3">
             <h2 className="font-bold text-lg text-blue-900 dark:text-blue-300">PANKAJ PRAJAPATI</h2>
             <p className="text-gray-700 dark:text-slate-300 pb-4">Creator of WeatherX · Web Developer</p>
@@ -50,10 +54,10 @@ const About = () => {
             <div className="flex flex-col justify-start items-start gap-2 mt-4">
               <h3 className="font-semibold">Find me online</h3>
               <ul className="list-none flex flex-wrap gap-3 list-inside px-4">
-                <Link href="https://github.com/PankajPraja1" target="_blank" rel="noopener"><li className="bg-gray-200 dark:bg-gray-800 rounded-xl p-1 px-2 flex items-center gap-1.5 hover:underline hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md"><FaGithub />GitHub</li></Link>
+                <Link href="https://github.com/PankajPraja1/Weather_0" target="_blank" rel="noopener"><li className="bg-gray-200 dark:bg-gray-800 rounded-xl p-1 px-2 flex items-center gap-1.5 hover:underline hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md"><FaGithub />GitHub</li></Link>
                 <Link href={"https://www.linkedin.com/in/pankaj-prajapati-535024195"} target="_blank" rel="noopener"><li className="bg-gray-200 dark:bg-gray-800 rounded-xl p-1 px-2 flex items-center gap-1.5 hover:underline hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md"><FaLinkedin />LinkedIn</li></Link>
                 <Link href={"https://www.instagram.com/pankajprajapati0411/"} target="_blank" rel="noopener"><li className="bg-gray-200 dark:bg-gray-800 rounded-xl p-1 px-2 flex items-center gap-1.5 hover:underline hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md"><FaInstagram />Instagram</li></Link>
-                <Link href={"#"}><li className="bg-gray-200 dark:bg-gray-800 rounded-xl p-1 px-2 flex items-center gap-1.5 hover:underline hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md"><FaCode />Portflio</li></Link>
+                <Link href={"https://www.pankaj-prajapati.tech"} target="_blank" rel="noopener"><li className="bg-gray-200 dark:bg-gray-800 rounded-xl p-1 px-2 flex items-center gap-1.5 hover:underline hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md"><FaCode />Portflio</li></Link>
               </ul>
             </div>
           </div>

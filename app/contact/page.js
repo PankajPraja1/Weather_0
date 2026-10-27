@@ -1,3 +1,7 @@
+export const metadata = {
+	title: "Contact us"
+}
+
 export default function ContactPage() {
 	return (
 		<main className="min-h-screen bg-white px-6 py-12 text-slate-950 dark:bg-slate-950 dark:text-white sm:px-10 lg:px-16">
